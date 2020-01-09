@@ -15,14 +15,14 @@ How can we analyze large graphs such as the Web, and social networks with hundre
 
 In this paper, we propose FlexGraph, a scalable distributed graph mining method reducing the I/O cost by exploiting properties of real-world graphs. FlexGraph significantly decreases the communication cost, which is the main bottleneck of distributed systems, by exploiting different edge placement policies based on the type of vertices. Furthermore, we propose a flexible storage format to reduce the I/O cost when reading input graph repeatedly. Experiments show that FlexGraph succeeds in processing up to 64x larger graphs than existing distributed memory-based graph mining methods, and consistently outperforms previous disk-based graph mining methods.
 
+## Reference
+
+- FlexGraph: Flexible Partitioning and Storage for Scalable Graph Mining (under-review)  
+Chiwan Park, Ha-Myung Park, and U Kang (Seoul National University)
+
 ## Contact
 
 If you encounter any problem with FlexGraph, please feel free to contact [chiwanpark@snu.ac.kr](mailto:chiwanparK@snu.ac.kr).
-
-## Reference
-
-- FlexGraph: Flexible Partitioning and Storage for Scalable Graph Mining (under-review)
-- Chiwan Park, Ha-Myung Park, and U Kang (Seoul National University)
 
 # How to Run
 
