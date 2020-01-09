@@ -1,6 +1,6 @@
 # FlexGraph
 
-This project is an open source implementation of "FlexGraph: Flexible Partitioning and Storage for Scalable Graph Mining". FlexGraph is a scalable graph mining system that runs in parallel and distributed manners on top of Apache Hadoop.
+This project is an implementation of FlexGraph: Flexible Partitioning and Storage for Scalable Graph Mining (PLOS One). FlexGraph is a scalable graph mining system that runs in parallel and distributed manners on top of Apache Hadoop.
 
 FlexGraph provides the following algorithms:
 
@@ -26,7 +26,8 @@ In this paper, we propose FlexGraph, a scalable distributed graph mining method 
 
 ## Reference
 
-- FlexGraph: Flexible Partitioning and Storage for Scalable Graph Mining (under-review)  
+- FlexGraph: Flexible Partitioning and Storage for Scalable Graph Mining  
+PLOS One  
 Chiwan Park, Ha-Myung Park, and U Kang (Seoul National University)
 
 # How to Run
