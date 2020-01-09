@@ -1,5 +1,6 @@
 # FlexGraph
-FlexGraph is a scalable graph mining system. It runs in parallel, distributed manner on top of Hadoop which is a widely-used distributed computation system.
+
+This project is an implementation of "FlexGraph: Flexible Partitioning and Storage for Scalable Graph Mining". FlexGraph is a scalable graph mining system that runs in parallel and distributed manners on top of Apache Hadoop.
 
 FlexGraph provides the following algorithms:
 
@@ -7,6 +8,23 @@ FlexGraph provides the following algorithms:
 * Random Walk with Restart (RWR)
 * Single Source Shortest Path
 * Weakly Connected Components
+
+## Abstract
+
+How can we analyze large graphs such as the Web, and social networks with hundreds of billions of vertices and edges? Although many graph mining systems have been proposed to perform various graph mining algorithms on such large graphs, they have difficulties in processing Web-scale graphs due to massive I/O cost caused by communication between workers, and reading subgraphs repeatedly.
+
+In this paper, we propose FlexGraph, a scalable distributed graph mining method reducing the I/O cost by exploiting properties of real-world graphs. FlexGraph significantly decreases the communication cost, which is the main bottleneck of distributed systems, by exploiting different edge placement policies based on the type of vertices. Furthermore, we propose a flexible storage format to reduce the I/O cost when reading input graph repeatedly. Experiments show that FlexGraph succeeds in processing up to 64x larger graphs than existing distributed memory-based graph mining methods, and consistently outperforms previous disk-based graph mining methods.
+
+## Contact
+
+If you encounter any problem with FlexGraph, please feel free to contact [chiwanpark@snu.ac.kr](mailto:chiwanparK@snu.ac.kr).
+
+## Reference
+
+- FlexGraph: Flexible Partitioning and Storage for Scalable Graph Mining (under-review)
+- Chiwan Park, Ha-Myung Park, and U Kang (Seoul National University)
+
+# How to Run
 
 ## Requirements
 * Apache Hadoop 2.7.x, 2.8.x (other versions are not supported yet)
@@ -76,26 +94,4 @@ sbin/sssp.sh \
   <THRESHOLD_TO_SPLIT_HIGH_DEG_VERTEX> \
   <NUMBER_OF_BLOCKS> \
   <SOURCE_VERTEX>
-```
-
-# Contact
-If you encounter any problem with FlexGraph, please feel free to contact [chiwanpark@snu.ac.kr](mailto:chiwanparK@snu.ac.kr).
-
-# License
-The source codes are distributed under Apache License 2.0.
-
-```
-Copyright 2018 SNU Data Mining Lab.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
 ```
