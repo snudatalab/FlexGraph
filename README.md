@@ -112,3 +112,18 @@ sbin/sssp.sh \
 
 If you encounter any problem with FlexGraph, please feel free to contact [chiwanpark@snu.ac.kr](mailto:chiwanparK@snu.ac.kr).
 
+## Reference
+If you use this code, please cite the following paper.
+```
+@article{park2020flexgraph,
+  title={FlexGraph: Flexible partitioning and storage for scalable graph mining},
+  author={Park, Chiwan and Park, Ha-Myung and Kang, U},
+  journal={Plos one},
+  volume={15},
+  number={1},
+  pages={e0227032},
+  year={2020},
+  publisher={Public Library of Science San Francisco, CA USA}
+}
+```
+
